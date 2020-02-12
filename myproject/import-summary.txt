@@ -1,6 +1,5 @@
 ECLIPSE ANDROID PROJECT IMPORT SUMMARY
 ======================================
-
 Risky Project Location:
 -----------------------
 The tools *should* handle project locations in any directory. However,
