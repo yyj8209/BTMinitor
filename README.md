@@ -1,4 +1,5 @@
 # myBluetooth
+一、原作者对蓝牙通信的说明：
 手机蓝牙串口的调试助手demo实现 手机蓝牙串口的调试助手demo实现源码，另附有打包好的APK文件。
 
 因为有人反映CSDN积分太贵，我决定开源出来，共给大家学习！
@@ -10,14 +11,11 @@
 在Android蓝牙通信连接的开发中，实现基本功能蓝牙通信软件，则需要在软件实现服务端和客户端两种机制[10]。这种通信构建需要在服务端程序根据UUID(通用唯一识别码)调用listenUsingRfcommWithServiceRecord(String,UUID）获得BluetoothServerSocket对象，在子线程调用accept()方法开启监听线程。在客户端也根据UUID(通用唯一识别码)调用createRfcommSocketToServiceRecord(UUID)获取BluetoothSocket，在子线程调用connect()方法发起请求连接。
 
 构建蓝牙通信连接后，不管是服务器还是客户端机制，彼此都会连接好的BluetoothSocket对象，获取对应的输入字节流（inputstream）和输出字节流（outputstream），可调用它们的read(byte[])和write(byte[])方法来分别实现对数据流的读和写，实现蓝牙数据通信功能。
-
-
-
-
 ————————————————
 版权声明：本文为CSDN博主「搂梦123」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原作者的博客：https://blog.csdn.net/sinat_27064327/article/details/80527460
 
-
-我的博客：https://blog.csdn.net/sinat_27064327/article/details/80527460
-
+二、蓝牙数据的实时动态显示
+前端数据不断更新，把接收到的历史数据都显示出现影响美观。《MPAndroidChart 教程》（八）采用的是removeLastEntry的方法来截短显示，不改变数据本身。我的实现方法是，设置一定长度的显示窗口（XAXIS_RANGE），直动态接移除多余的数据，内存的数据即为显示的数据。
+我的博客：https://blog.csdn.net/yangyunjun/article/details/104331126
 欢迎大家留言，以后我会把博客用起来，多开源项目出来一起学习
