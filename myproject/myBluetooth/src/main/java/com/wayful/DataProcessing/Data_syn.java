@@ -1,4 +1,4 @@
-package com.wayful.Bluetooth;
+package com.wayful.DataProcessing;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.NumberFormat;

@@ -23,22 +23,17 @@ import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.DashPathEffect;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
-import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,26 +45,17 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.IValueFormatter;
-import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
-import com.github.mikephil.charting.listener.ChartTouchListener;
-import com.github.mikephil.charting.listener.OnChartGestureListener;
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.github.mikephil.charting.utils.Utils;
 import com.github.mikephil.charting.utils.ViewPortHandler;
 import com.wayful.Bluetooth.BluetoothChatService;
-import com.wayful.Bluetooth.Data_syn;
+import com.wayful.DataProcessing.Data_syn;
 import com.wayful.Bluetooth.DeviceListActivity;
 import com.wayful.Bluetooth.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -234,53 +220,7 @@ public class BluetoothPlot extends Activity {
         lineChart.setGridBackgroundColor( Color.BLACK );
         lineChart.setBorderColor( Color.YELLOW );
 		lineChart.getDescription().setEnabled(false);//设置描述文本
-//		lineChart.setOnTouchListener( new View.OnTouchListener() {
-//			@Override
-//			public boolean onTouch(View v, MotionEvent event) {
-//				return false;
-//			}
-//		} );
-//		lineChart.setOnChartGestureListener( new OnChartGestureListener() {
-//			@Override
-//			public void onChartGestureStart(MotionEvent me, ChartTouchListener.ChartGesture lastPerformedGesture) {
-//
-//			}
-//
-//			@Override
-//			public void onChartGestureEnd(MotionEvent me, ChartTouchListener.ChartGesture lastPerformedGesture) {
-//
-//			}
-//
-//			@Override
-//			public void onChartLongPressed(MotionEvent me) {
-//
-//			}
-//
-//			@Override
-//			public void onChartDoubleTapped(MotionEvent me) {
-//
-//			}
-//
-//			@Override
-//			public void onChartSingleTapped(MotionEvent me) {
-//
-//			}
-//
-//			@Override
-//			public void onChartFling(MotionEvent me1, MotionEvent me2, float velocityX, float velocityY) {
-//
-//			}
-//
-//			@Override
-//			public void onChartScale(MotionEvent me, float scaleX, float scaleY) {
-//
-//			}
-//
-//			@Override
-//			public void onChartTranslate(MotionEvent me, float dX, float dY) {
-//
-//			}
-//		} );
+
 		lineChart.setTouchEnabled(true);//设置支持触控手势
 		lineChart.setDragEnabled(true);//设置缩放
 		lineChart.setScaleEnabled(true);//设置推动
@@ -341,9 +281,6 @@ public class BluetoothPlot extends Activity {
 
 	private void setChartLineStyle(LineDataSet set, int color){
         set.disableDashedLine();
-//			set1.enableDashedHighlightLine(10f, 5f, 0f);
-//            set1.setFormLineWidth(1f);
-//            set1.setFormLineDashEffect(new DashPathEffect(new float[]{10f, 5f}, 0f));
         set.setColor(color);  // Color.BLACK);
         set.setLineWidth(1f);
 		set.setDrawCircles( false );
