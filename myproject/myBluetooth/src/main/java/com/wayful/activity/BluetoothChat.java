@@ -40,7 +40,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.wayful.Bluetooth.BluetoothChatService;
-import com.wayful.Bluetooth.Data_syn;
+import com.wayful.DataProcessing.Data_syn;
 import com.wayful.Bluetooth.DeviceListActivity;
 import com.wayful.Bluetooth.R;
 

@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\4a886c807e8edea08ea5abca46aae16c\appcompat-v7-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\f0b606c9fced75b8c2c36f0323cf799c\constraint-layout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\1d02053abb517b04d784a6993e86c78b\support-fragment-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\e4957b72a9bb1ad0983765c428f6245e\animated-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b4715ab37fd98c82f241b05944074a38\support-core-ui-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b2129cc24becc04eaad0552c72a58265\support-core-utils-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\6c8ce84ca28c08f6b4cb673fceba90d0\support-vector-drawable-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\25f768d193c32cb3748b68e09e03bc81\support-compat-27.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\dda3fbc64b29cf690216f337bc58ec4c\livedata-core-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\2d83aa17362795e30f5ffb9ba9a700fc\viewmodel-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\221e784dd3940577f71b524955a9d156\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\0bba5566df70173770edc14814cfa611\runtime-1.1.0\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:1-61:12
+	package
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:4:5-35
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:7:5-30
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:6:5-28
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:12:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:16:5-84
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:16:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.INTERNET
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:19:5-66
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:19:22-64
+application
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:22:5-59:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\f0b606c9fced75b8c2c36f0323cf799c\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\f0b606c9fced75b8c2c36f0323cf799c\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:24:9-41
+	android:icon
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:23:9-53
+	android:theme
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:25:9-45
+activity#com.wayful.activity.BluetoothChat
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:27:9-38:20
+	android:screenOrientation
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:30:13-51
+	android:label
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:31:13-45
+	android:configChanges
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:29:13-63
+	android:theme
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:32:13-49
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:28:13-61
+activity#com.wayful.activity.BluetoothPlot
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:40:9-52:20
+	android:screenOrientation
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:44:13-51
+	android:label
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:45:13-45
+	android:windowSoftInputMode
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:43:13-67
+	android:configChanges
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:42:13-63
+	android:theme
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:46:13-49
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:41:13-61
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:48:13-51:29
+action#android.intent.action.MAIN
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:49:17-69
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:49:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:50:17-77
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:50:27-74
+activity#com.wayful.Bluetooth.DeviceListActivity
+ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:54:9-57:59
+	android:configChanges
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:56:13-63
+	android:theme
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:55:13-67
+uses-sdk
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\4a886c807e8edea08ea5abca46aae16c\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\4a886c807e8edea08ea5abca46aae16c\appcompat-v7-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\f0b606c9fced75b8c2c36f0323cf799c\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\f0b606c9fced75b8c2c36f0323cf799c\constraint-layout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\1d02053abb517b04d784a6993e86c78b\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\1d02053abb517b04d784a6993e86c78b\support-fragment-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\e4957b72a9bb1ad0983765c428f6245e\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\e4957b72a9bb1ad0983765c428f6245e\animated-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b4715ab37fd98c82f241b05944074a38\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b4715ab37fd98c82f241b05944074a38\support-core-ui-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b2129cc24becc04eaad0552c72a58265\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\b2129cc24becc04eaad0552c72a58265\support-core-utils-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\6c8ce84ca28c08f6b4cb673fceba90d0\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\6c8ce84ca28c08f6b4cb673fceba90d0\support-vector-drawable-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\25f768d193c32cb3748b68e09e03bc81\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\25f768d193c32cb3748b68e09e03bc81\support-compat-27.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\dda3fbc64b29cf690216f337bc58ec4c\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\dda3fbc64b29cf690216f337bc58ec4c\livedata-core-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\2d83aa17362795e30f5ffb9ba9a700fc\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\2d83aa17362795e30f5ffb9ba9a700fc\viewmodel-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\221e784dd3940577f71b524955a9d156\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\221e784dd3940577f71b524955a9d156\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\0bba5566df70173770edc14814cfa611\runtime-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\yangyunjun\.gradle\wrapper\dists\gradle-4.4-all\caches\transforms-2\files-2.1\0bba5566df70173770edc14814cfa611\runtime-1.1.0\AndroidManifest.xml:20:5-44
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		ADDED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+		INJECTED from E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
