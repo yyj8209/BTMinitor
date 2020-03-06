@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "F:\\Android\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\db5b0efdb4745b256ac52a688ce94333\\res\\values-bg\\values-bg.xml",
+=======
+            "outputFile": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\4a886c807e8edea08ea5abca46aae16c\\appcompat-v7-27.1.1\\res\\values-bg\\values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,327,432,518,623,744,823,901,984,1098,1207,1307,1421,1527,1635,1795,1894",
+                        "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
+                        "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,1972"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\25f768d193c32cb3748b68e09e03bc81\\support-compat-27.1.1\\res\\values-bg\\values-bg.xml",
+>>>>>>> dev
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -19,6 +36,7 @@
                         "endColumns": "100",
                         "endOffsets": "2073"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\cde077ac02b077d99545fe150858166a\\res\\values-bg\\values-bg.xml",
@@ -29,6 +47,8 @@
                         "endColumns": "114,106,104,85,104,120,78,77,82,113,108,99,113,105,107,159,98,82",
                         "endOffsets": "215,322,427,513,618,739,818,896,979,1093,1202,1302,1416,1522,1630,1790,1889,1972"
                     }
+=======
+>>>>>>> dev
                 }
             ]
         }

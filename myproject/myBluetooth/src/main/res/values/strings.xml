@@ -49,6 +49,9 @@
     <string name="button_scan">搜索设备</string>
     <string name="discoverable1">本机可见</string>
     <string name="search">搜索设备</string>
+    <string name="realtime_reco">实时识别</string>
+    <string name="acqu_data">采集数据</string>
+    <string name="reco_data">开始识别</string>
     <string name="check">检错模式</string>
     <string name="errorma">误比特率:</string>
     <string name="ex">%</string>

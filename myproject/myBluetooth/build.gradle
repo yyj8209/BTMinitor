@@ -25,5 +25,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+<<<<<<< HEAD
     implementation files('F:/Android/BTMinitor/myproject/app/libs/dsp-collection.jar')
+=======
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+// https://mvnrepository.com/artifact/org.ujmp/ujmp-core
+    implementation group: 'org.ujmp', name: 'ujmp-core', version: '0.3.0'
+
+>>>>>>> dev
 }

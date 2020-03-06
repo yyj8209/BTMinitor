@@ -22,6 +22,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
@@ -34,6 +35,11 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
+<<<<<<< HEAD
+=======
+import android.widget.Chronometer;
+import android.widget.CompoundButton;
+>>>>>>> dev
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,6 +55,10 @@ import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.ViewPortHandler;
 import com.wayful.Bluetooth.BluetoothChatService;
+<<<<<<< HEAD
+=======
+import com.wayful.DataProcessing.DSP;
+>>>>>>> dev
 import com.wayful.DataProcessing.Data_syn;
 import com.wayful.Bluetooth.DeviceListActivity;
 import com.wayful.Bluetooth.R;
@@ -58,6 +68,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.ujmp.core.DenseMatrix;
+import org.ujmp.core.Matrix;
+import org.ujmp.core.calculation.Calculation;
 
 /**
  * 显示通信信息的主Activity。
@@ -67,6 +80,7 @@ public class BluetoothPlot extends Activity {
 	private static final String TAG = "BluetoothPlot";
 	private static final boolean D = true;
 	private static final float A = 5000.0f/32768;
+	private static final int MAX_XRANGE = 3000;
     //返回页面标志
 	private boolean exit =false;
 
@@ -96,16 +110,16 @@ public class BluetoothPlot extends Activity {
     private Button search;
 	private Button disc;
 	private Button settings;
+	private CheckBox realtime_reco;
+	private Button start_stop;
+	private TextView reco_res;
+	private String strStartStop;
 	LineChart lineChart;
-	ArrayList<Entry> values;
+	ArrayList<Entry> values, values1, values2, values3;
 	LineDataSet set1,set2,set3;
+	private int nTotalNum;
 
 	private TextView mTitle;
-
-	// 声明复选按钮
-	private CheckBox in16;
-	private CheckBox autosend;
-	private CheckBox out16;
 
 	// 用来保存存储的文件名
 	public String filename = "";
@@ -115,7 +129,9 @@ public class BluetoothPlot extends Activity {
 	// 已连接设备的名称
 	private String mConnectedDeviceName = null;
 	// 输出流缓冲区
-//	private StringBuffer mOutStringBuffer;
+	private Matrix matrixCHData;    // 存储一次探 扫的数据。
+	private boolean bRecognize, bFreeseDisp;
+	private static final String []CATAGOTIES = {"大干扰","小干扰","雷","无目标"};
 
 	// 本地蓝牙适配器
 	private BluetoothAdapter mBluetoothAdapter = null;
@@ -162,11 +178,40 @@ public class BluetoothPlot extends Activity {
 				settings();
 			}
 		} );
+		realtime_reco.setOnCheckedChangeListener( new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if(isChecked){
+					start_stop.setBackground(getDrawable( R.drawable.butto ));
+					start_stop.setEnabled( true );
+				}
+				else {
+					start_stop.setBackgroundColor(getResources().getColor(R.color.layout_press,getTheme() ));
+					start_stop.setEnabled( false );
+				}
+			}
+		} );
+		start_stop.setOnClickListener( new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				strStartStop = start_stop.getText().toString();
+				if(strStartStop.contains( "采集" )){
+					start_stop.setText( getResources().getString( R.string.reco_data ) );
+					acquData();
+					start_stop.setBackgroundColor(Color.rgb( 248,238,228 ));
+				}
+				else{
+					start_stop.setText( getResources().getString( R.string.acqu_data ) );
+					recoData();
+					start_stop.setBackground(getDrawable( R.drawable.butto ));
+				}
+			}
+		} );
 
 		initData();
 		initChart();
-//		setData(values);
-//		lineChart.invalidate();
+		initChartData();
+		lineChart.invalidate();
 	}
 
 	public void settings(){
@@ -175,15 +220,20 @@ public class BluetoothPlot extends Activity {
 	}
 
 	private void initUI(){
-		// 通过findViewById获得CheckBox对象
-		in16 = (CheckBox) findViewById(R.id.in16);
-		autosend = (CheckBox) findViewById(R.id.autosend);
-		out16 = (CheckBox) findViewById(R.id.out16);
-
 		// 获得button的对象
 		search = (Button) findViewById( R.id.search );
 		disc = (Button) findViewById( R.id.discoverable1 );
 		settings = (Button) findViewById( R.id.settings );
+		//
+		realtime_reco = (CheckBox) findViewById(R.id.recognize);
+		start_stop = (Button) findViewById(R.id.start_stop);
+		reco_res = (TextView) findViewById(R.id.reco_res);
+		strStartStop = getResources().getString( R.string.acqu_data );
+		matrixCHData = DenseMatrix.Factory.emptyMatrix();
+		Log.e(TAG, "line218 matrixCHData长度："+ matrixCHData.getColumnCount());
+		bRecognize = false;
+		bFreeseDisp = false;
+
 		//获取选择控件的值
 		// 设置custom title
 		mTitle = (TextView) findViewById(R.id.title_left_text);
@@ -193,19 +243,14 @@ public class BluetoothPlot extends Activity {
 
 	private void initData()
 	{
-	    set1 = new LineDataSet(values, "通道 1 数据");
-        set2 = new LineDataSet(values, "通道 2 数据");
-        set3 = new LineDataSet(values, "通道 3 数据");
 		values = new ArrayList<Entry>();
-//		values.add(new Entry(1, 0));
-//		values.add(new Entry(2, 0));
-//		values.add(new Entry(3, 0));
-//		values.add(new Entry(4, 0));
-//		values.add(new Entry(5, 0));
-//		values.add(new Entry(6, 0));
-//		values.add(new Entry(7, 0));
-//		values.add(new Entry(8, 0));
-//		values.add(new Entry(9, 0));
+		values.add(new Entry(1,0));
+		values.add(new Entry(2,0));
+		values.add(new Entry(3,0));
+		values1 = new ArrayList<Entry>();
+		values2 = new ArrayList<Entry>();
+		values3 = new ArrayList<Entry>();
+		nTotalNum = 0;
 	}
 
 	private void initChart(){
@@ -227,18 +272,55 @@ public class BluetoothPlot extends Activity {
 		lineChart.setPinchZoom(true);//如果禁用,扩展可以在x轴和y轴分别完成
 		Legend legend = lineChart.getLegend();
 		legend.setForm(Legend.LegendForm.LINE);
+		legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
+		legend.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
+		legend.setOrientation(Legend.LegendOrientation.HORIZONTAL);
+		legend.setDrawInside(false);
+		legend.setDirection(Legend.LegendDirection.LEFT_TO_RIGHT);
+		legend.setForm(Legend.LegendForm.LINE);
+		legend.setTextSize(12f);
 		lineChart.animateX(10);//默认动画
 	}
 
-	private void setData(ArrayList<Entry> values){
-        ArrayList<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
+	private void initChartData(){
+		ArrayList<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
 		if (lineChart.getData() != null && lineChart.getData().getDataSetCount() > 0) {
 			set1 = (LineDataSet) lineChart.getData().getDataSetByIndex(0);
 			set1.setValues(values);
-			set1.setLabel( "通道 1 数据" );
+			set1.setLabel( "初始数据" );
+			//添加数据集
+			dataSets.add(set1);
+			setChartLineStyle(set1,LINE_COLORS[0]);
+			lineChart.getData().notifyDataChanged();
+			lineChart.notifyDataSetChanged();
+		} else {
+			// 创建一个数据集,并给它一个类型
+			set1 = new LineDataSet(values, "测试数据");
+			//添加数据集
+			dataSets.add(set1);
+			// 在这里设置线
+			setChartLineStyle(set1,LINE_COLORS[0]);
+		}
+		//创建一个数据集的数据对象
+		LineData data = new LineData(dataSets);
+		//谁知数据
+		lineChart.setData(data);
+	}
+
+	private void setChartData(){
+        ArrayList<ILineDataSet> dataSets = new ArrayList<ILineDataSet>();
+		if (lineChart.getData() != null && lineChart.getData().getDataSetCount() > 0) {
+
+			set1 = new LineDataSet(values1, "通道 1 数据");
+			set2 = new LineDataSet(values2, "通道 2 数据");
+			set3 = new LineDataSet(values3, "通道 3 数据");
             //添加数据集
             dataSets.add(set1);
+			dataSets.add(set2);
+			dataSets.add(set3);
             setChartLineStyle(set1,LINE_COLORS[0]);
+            setChartLineStyle(set2,LINE_COLORS[1]);
+            setChartLineStyle(set3,LINE_COLORS[2]);
 			lineChart.getData().notifyDataChanged();
 			lineChart.notifyDataSetChanged();
 		} else {
@@ -282,7 +364,7 @@ public class BluetoothPlot extends Activity {
 	private void setChartLineStyle(LineDataSet set, int color){
         set.disableDashedLine();
         set.setColor(color);  // Color.BLACK);
-        set.setLineWidth(1f);
+        set.setLineWidth(1.5f);
 		set.setDrawCircles( false );
 		set.setCircleColor(color);
 //        set.setCircleRadius(1f);
@@ -411,12 +493,34 @@ public class BluetoothPlot extends Activity {
                     int len = msg.arg1/32;    // 32个字节，目前测试：回传数据均为32的整数倍。
                     float [][]CHData = new float[3][len];
                     CHData =  Data_syn.bytesToFloat(readBuf, msg.arg1);
-                    int nValues = values.size();
+                    if(bRecognize) {
+                        Matrix matrix = DenseMatrix.Factory.importFromArray( CHData );
+						matrixCHData = matrixCHData.appendHorizontally( Calculation.Ret.LINK, matrix.times( A ) );
+						Log.e(TAG, "matrixCHData/matrix长度："+matrixCHData.getRowCount()+"/"+
+												matrixCHData.getColumnCount()+"/"+matrix.getColumnCount());
+					}
+					if(bFreeseDisp)
+						return;   // 固定识别时所用的数据。
 
-                    for(int i = 0; i < len; i++)
-                        values.add(new Entry( nValues + i, A * CHData[0][i]));
-                    setData(values);
-                    lineChart.invalidate();
+					for (int i = 0; i < len; i++) {
+						values1.add(new Entry(nTotalNum + i, A*(float) CHData[0][i]));
+						values2.add(new Entry(nTotalNum + i, A*(float) CHData[1][i]));
+						values3.add(new Entry(nTotalNum + i, A*(float) CHData[2][i]));
+					}
+
+					if (values1.size() - MAX_XRANGE > 0){
+						for (int j = 0; j < values1.size()-MAX_XRANGE; j++){
+							values1.remove( 0 );
+							values2.remove( 0 );
+							values3.remove( 0 );
+						}
+					}
+
+					nTotalNum = nTotalNum + len;
+					Log.e(TAG,"values1长度"+Integer.toString( values1.size() )+
+							"|nTotalNum值 "+Integer.toString( nTotalNum ));
+					setChartData();
+					lineChart.invalidate();
 
                     break;
                 case MESSAGE_DEVICE_NAME:
@@ -638,6 +742,37 @@ public class BluetoothPlot extends Activity {
 									int which) {
 							}
 						}).show(); // 显示对话框
+	}
+
+	// 开始采集数据用来识别。
+	private void 	acquData(){
+		matrixCHData = DenseMatrix.Factory.emptyMatrix();
+		bRecognize = true;
+		bFreeseDisp = false;
+	}
+	// 得出识别结果。
+	private void 	recoData(){
+		int m = new Double(matrixCHData.getRowCount()).intValue();
+		int n = new Double( matrixCHData.getColumnCount() ).intValue();
+		double[][] CHData;
+		double[][] FilterData;
+		double[] PeakValues;
+		double[] CharacterValues = new double[ 4 ];
+
+//		DenseMatrix.Factory.linkToArray( CHData );
+		CHData = matrixCHData.toDoubleArray();
+		FilterData = DSP.FIRFilter(CHData);
+		PeakValues = DSP.PeakValue( FilterData, 100 );// 以各信号的四个特征值为行，组成特征值矩阵。
+		for(int j = 0; j < 3; j++)
+			CharacterValues[j] = PeakValues[j];
+		CharacterValues[3] = DSP.V1toV3( PeakValues );
+
+		CharacterValues = DSP.mapMaxMin( CharacterValues );
+
+		reco_res.setText( "类型："+CATAGOTIES[DSP.BPNN( CharacterValues )] );
+
+		bRecognize = false;
+		bFreeseDisp = true;
 	}
 
 	@Override

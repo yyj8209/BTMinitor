@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "F:\\Android\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\db5b0efdb4745b256ac52a688ce94333\\res\\values-lv\\values-lv.xml",
+=======
+            "outputFile": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\4a886c807e8edea08ea5abca46aae16c\\appcompat-v7-27.1.1\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,333,442,528,632,754,836,918,1003,1112,1224,1323,1434,1543,1648,1822,1921",
+                        "endColumns": "119,107,108,85,103,121,81,81,84,108,111,98,110,108,104,173,98,81",
+                        "endOffsets": "220,328,437,523,627,749,831,913,998,1107,1219,1318,1429,1538,1643,1817,1916,1998"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\25f768d193c32cb3748b68e09e03bc81\\support-compat-27.1.1\\res\\values-lv\\values-lv.xml",
+>>>>>>> dev
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -19,6 +36,7 @@
                         "endColumns": "100",
                         "endOffsets": "2099"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\cde077ac02b077d99545fe150858166a\\res\\values-lv\\values-lv.xml",
@@ -29,6 +47,8 @@
                         "endColumns": "119,107,108,85,103,121,81,81,84,108,111,98,110,108,104,173,98,81",
                         "endOffsets": "220,328,437,523,627,749,831,913,998,1107,1219,1318,1429,1538,1643,1817,1916,1998"
                     }
+=======
+>>>>>>> dev
                 }
             ]
         }

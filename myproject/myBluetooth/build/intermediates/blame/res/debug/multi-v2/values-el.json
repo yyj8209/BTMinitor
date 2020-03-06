@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "F:\\Android\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
             "map": [
                 {
@@ -15,6 +16,12 @@
                 },
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\db5b0efdb4745b256ac52a688ce94333\\res\\values-el\\values-el.xml",
+=======
+            "outputFile": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\25f768d193c32cb3748b68e09e03bc81\\support-compat-27.1.1\\res\\values-el\\values-el.xml",
+>>>>>>> dev
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -29,6 +36,19 @@
                         "endColumns": "100",
                         "endOffsets": "2118"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "C:\\Users\\yangyunjun\\.gradle\\wrapper\\dists\\gradle-4.4-all\\caches\\transforms-2\\files-2.1\\4a886c807e8edea08ea5abca46aae16c\\appcompat-v7-27.1.1\\res\\values-el\\values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,334,451,536,641,767,855,941,1026,1137,1247,1349,1460,1569,1677,1837,1937",
+                        "endColumns": "117,110,116,84,104,125,87,85,84,110,109,101,110,108,107,159,99,84",
+                        "endOffsets": "218,329,446,531,636,762,850,936,1021,1132,1242,1344,1455,1564,1672,1832,1932,2017"
+                    }
+>>>>>>> dev
                 }
             ]
         }

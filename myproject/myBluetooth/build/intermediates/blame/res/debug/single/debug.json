@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "F:\\Android\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\cde077ac02b077d99545fe150858166a\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
@@ -1710,5 +1711,269 @@
     {
         "merged": "F:\\Android\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\cde077ac02b077d99545fe150858166a\\res\\color-v23\\abc_tint_spinner.xml"
+=======
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_ee.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\ee.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_progress.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_progress.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_but.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\but.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_list_tubiao.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\list_tubiao.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_progressbar_color_02.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\progressbar_color_02.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_mainbutton_default.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\mainbutton_default.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_app_incon_bluetooth.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-hdpi\\app_incon_bluetooth.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_butto.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\butto.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_settings.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\settings.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_curve.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\curve.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_t.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\t.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_mainbutton_pressed.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\mainbutton_pressed.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_button_press.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_button_press.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bluetoothbutton.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bluetoothbutton.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_shape_progressbar_bg.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\shape_progressbar_bg.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_activity_bluetooth_chat_layout.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\activity_bluetooth_chat_layout.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_backgroub.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\backgroub.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_app_incon_bluetooth1.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-xhdpi\\app_incon_bluetooth1.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_app_incon_bluetooth1.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\app_incon_bluetooth1.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_progressbar_color_03.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\progressbar_color_03.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_background.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\background.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bluettothbutton_pressed.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bluettothbutton_pressed.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_dropdown_bg_selector.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\dropdown_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_layout_selecter.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\layout_selecter.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_history_press.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\history_press.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_button.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_button.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_checkon.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\checkon.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bluetoothbutton_default.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bluetoothbutton_default.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_checkoff.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\checkoff.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_dropdown_list_selector.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\dropdown_list_selector.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_input_press.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_input_press.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_background_login_div.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\background_login_div.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_but2.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\but2.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_mai.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\mai.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_input_default.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_input_default.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_mainbutton.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\mainbutton.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_app_incon_bluetooth.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-xhdpi\\app_incon_bluetooth.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_app_incon_bluetooth1.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-hdpi\\app_incon_bluetooth1.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\menu_option_menu.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\menu\\option_menu.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_app_incon_bluetooth.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\app_incon_bluetooth.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_back.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_device_list.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\device_list.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_dropdown.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\dropdown.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_checkbox_style.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\checkbox_style.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_receicer.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\receicer.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_settings.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-hdpi\\settings.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_activity_bluetooth_plot_layout.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\activity_bluetooth_plot_layout.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_curve.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-hdpi\\curve.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_checkboxsytle.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\checkboxsytle.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_f.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\f.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_button_default.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_button_default.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_realtime_ch.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\realtime_ch.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_shape_progressbar_mini.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\shape_progressbar_mini.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_sou.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\sou.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bac.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bac.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_curve.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-xhdpi\\curve.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_device_name.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\device_name.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_sname.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\sname.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_progressbar_color_01.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\progressbar_color_01.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\layout_custom_title.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\layout\\custom_title.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_settings.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable-xhdpi\\settings.png"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_bg_login_input.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\bg_login_input.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_butt1.xml.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\butt1.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_gg.jpg.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\gg.jpg"
+    },
+    {
+        "merged": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\build\\intermediates\\res\\merged\\debug\\drawable_history_normal.png.flat",
+        "source": "E:\\GitHub\\BTMinitor\\myproject\\myBluetooth\\src\\main\\res\\drawable\\history_normal.png"
+>>>>>>> dev
     }
 ]

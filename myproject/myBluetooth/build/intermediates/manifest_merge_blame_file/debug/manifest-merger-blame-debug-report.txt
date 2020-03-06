@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wayful.Bluetooth"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml
+10    <!-- <uses-sdk -->
+11    <!-- android:minSdkVersion="23" -->
+12    <!-- android:targetSdkVersion="28" /> -->
+13
+14    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+14-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:12:5-74
+14-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:12:22-71
+15    <uses-permission android:name="android.permission.BLUETOOTH" />
+15-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:13:5-68
+15-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:13:22-65
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:14:5-79
+16-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:14:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:15:5-81
+17-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:15:22-78
+18    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+18-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:16:5-84
+18-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:16:22-81
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:17:5-81
+19-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:17:22-78
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:18:5-75
+20-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:18:22-73
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:19:5-66
+21-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:19:22-64
+22
+23    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+24    <application
+24-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:22:5-59:19
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@drawable/app_incon_bluetooth"
+27-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:23:9-53
+28        android:label="@string/app_name"
+28-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:24:9-41
+29        android:testOnly="true"
+30        android:theme="@style/activityTheme" >
+30-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:25:9-45
+31        <activity
+31-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:27:9-38:20
+32            android:name="com.wayful.activity.BluetoothChat"
+32-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:28:13-61
+33            android:configChanges="orientation|keyboardHidden"
+33-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:29:13-63
+34            android:label="@string/app_name"
+34-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:31:13-45
+35            android:screenOrientation="portrait"
+35-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:30:13-51
+36            android:theme="@style/activityTheme" >
+36-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:32:13-49
+37
+38            <!-- <intent-filter> -->
+39            <!-- <action android:name="android.intent.action.MAIN" /> -->
+40            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+41            <!-- </intent-filter> -->
+42        </activity>
+43        <activity
+43-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:40:9-52:20
+44            android:name="com.wayful.activity.BluetoothPlot"
+44-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:41:13-61
+45            android:configChanges="orientation|keyboardHidden"
+45-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:42:13-63
+46            android:label="@string/app_name"
+46-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:45:13-45
+47            android:screenOrientation="portrait"
+47-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:44:13-51
+48            android:theme="@style/activityTheme"
+48-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:46:13-49
+49            android:windowSoftInputMode="stateHidden|adjustResize" >
+49-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:43:13-67
+50            <intent-filter>
+50-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:48:13-51:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:49:17-69
+51-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:49:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:50:17-77
+53-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:50:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:54:9-57:59
+57            android:name="com.wayful.Bluetooth.DeviceListActivity"
+57-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:55:13-67
+58            android:configChanges="orientation|keyboardHidden"
+58-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:56:13-63
+59            android:theme="@android:style/Theme.Dialog" />
+59-->E:\GitHub\BTMinitor\myproject\myBluetooth\src\main\AndroidManifest.xml:57:13-56
+60    </application>
+61
+62</manifest>

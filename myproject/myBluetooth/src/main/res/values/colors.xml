@@ -13,4 +13,6 @@
     <color name="dropdownlist_press">#9d9087</color>
     <color name="dropdownlist_item">#f2eada</color>
     <color name="dropdownlist_item_press">#c1b5b7</color>
+    <color name="layout1">#0499e2</color>
+    <color name="layout2">#44e9e2</color>
 </resources>

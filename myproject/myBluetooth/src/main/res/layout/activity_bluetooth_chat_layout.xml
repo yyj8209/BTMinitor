@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
 
-        android:background="#04c9e2">
+        android:background="@color/layout1">
 
         <Button
             android:id="@+id/search"
@@ -23,7 +23,7 @@
             android:layout_gravity="center_vertical"
             android:background="@drawable/butto"
             android:text="@string/search"
-            android:textColor="#04c9e2"
+            android:textColor="@color/layout1"
             android:textSize="15dp" />
 
         <Button
@@ -34,7 +34,7 @@
             android:layout_gravity="center_vertical"
             android:background="@drawable/butto"
             android:text="@string/discoverable1"
-            android:textColor="#04c9e2"
+            android:textColor="@color/layout1"
             android:textSize="15dp"
 
             />
