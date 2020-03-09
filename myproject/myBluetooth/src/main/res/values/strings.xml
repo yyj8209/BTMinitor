@@ -44,6 +44,9 @@
     <string name="select_device">选择一个设备连接</string>
     <string name="none_paired">无已配对的设备</string>
     <string name="none_found">未发现设备</string>
+    <string name="bt_source">蓝牙数据</string>
+    <string name="ds_mechine">探扫数据</string>
+    <string name="ds_file">文件数据</string>
     <string name="title_paired_devices">已配对的设备</string>
     <string name="title_other_devices">其它可用的设备</string>
     <string name="button_scan">搜索设备</string>

@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,16 +39,19 @@ import android.widget.CheckBox;
 import android.widget.Chronometer;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.ViewPortHandler;
@@ -104,6 +108,7 @@ public class BluetoothPlot extends Activity {
     private Button search;
 	private Button disc;
 	private Button settings;
+    private Switch aSwitch;
 	private CheckBox realtime_reco;
 	private Button start_stop;
 	private TextView reco_res;
@@ -125,13 +130,14 @@ public class BluetoothPlot extends Activity {
 	// 输出流缓冲区
 	private Matrix matrixCHData;    // 存储一次探 扫的数据。
 	private boolean bRecognize, bFreeseDisp;
-	private static final String []CATAGOTIES = {"大干扰","小干扰","雷","无目标"};
+	private static final String []CATAGORIES = {"大干扰","小干扰","雷","无目标"};
 
 	// 本地蓝牙适配器
 	private BluetoothAdapter mBluetoothAdapter = null;
 	// 用于通信的服务
 	private BluetoothChatService mChatService = null;
-	// CheckBox用
+	// 1、直采的数据，每组32个字节；2、保存的dat文件，每组24字节。
+    public int BYTES_PER_ROW = 32;    //
 
 	@Override
  	public void onCreate(Bundle savedInstanceState) {
@@ -172,6 +178,15 @@ public class BluetoothPlot extends Activity {
 				settings();
 			}
 		} );
+		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                    BYTES_PER_ROW = 24;
+                else
+                    BYTES_PER_ROW = 32;
+            }
+        });
 		realtime_reco.setOnCheckedChangeListener( new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -218,6 +233,7 @@ public class BluetoothPlot extends Activity {
 		search = (Button) findViewById( R.id.search );
 		disc = (Button) findViewById( R.id.discoverable1 );
 		settings = (Button) findViewById( R.id.settings );
+		aSwitch = (Switch) findViewById(R.id.data_source);
 		//
 		realtime_reco = (CheckBox) findViewById(R.id.recognize);
 		start_stop = (Button) findViewById(R.id.start_stop);
@@ -258,6 +274,8 @@ public class BluetoothPlot extends Activity {
 //        lineChart.setBackgroundColor( BACKGROUND_COLOR);
         lineChart.setGridBackgroundColor( Color.BLACK );
         lineChart.setBorderColor( Color.YELLOW );
+		lineChart.setExtraOffsets(0, 10, 0, 10);
+
 		lineChart.getDescription().setEnabled(false);//设置描述文本
 
 		lineChart.setTouchEnabled(true);//设置支持触控手势
@@ -271,8 +289,8 @@ public class BluetoothPlot extends Activity {
 		legend.setOrientation(Legend.LegendOrientation.HORIZONTAL);
 		legend.setDrawInside(false);
 		legend.setDirection(Legend.LegendDirection.LEFT_TO_RIGHT);
-		legend.setForm(Legend.LegendForm.LINE);
 		legend.setTextSize(12f);
+
 		lineChart.animateX(10);//默认动画
 	}
 
@@ -484,16 +502,15 @@ public class BluetoothPlot extends Activity {
                     break;
                 case MESSAGE_READ:
                     byte[] readBuf = (byte[]) msg.obj;
-                    int len = msg.arg1/32;    // 32个字节，目前测试：回传数据均为32的整数倍。
-                    float [][]CHData = new float[3][len];
-                    CHData =  Data_syn.bytesToFloat(readBuf, msg.arg1);
+                    int len = msg.arg1/BYTES_PER_ROW;    // 直采的数据，每组32个字节；保存的dat文件，每组24字节。
+                    float [][]CHData = Data_syn.bytesToFloat(readBuf, msg.arg1, BYTES_PER_ROW);
                     if(bRecognize) {
                         Matrix matrix = DenseMatrix.Factory.importFromArray( CHData );
 						matrixCHData = matrixCHData.appendHorizontally( Calculation.Ret.LINK, matrix.times( A ) );
-						Log.e(TAG, "matrixCHData/matrix长度："+matrixCHData.getRowCount()+"/"+
-												matrixCHData.getColumnCount()+"/"+matrix.getColumnCount());
+//						Log.e(TAG, "matrixCHData/matrix长度："+matrixCHData.getRowCount()+"/"+
+//												matrixCHData.getColumnCount()+"/"+matrix.getColumnCount());
 					}
-					if(bFreeseDisp)
+					if(bRecognize && bFreeseDisp)
 						return;   // 固定识别时所用的数据。
 
 					for (int i = 0; i < len; i++) {
@@ -511,8 +528,8 @@ public class BluetoothPlot extends Activity {
 					}
 
 					nTotalNum = nTotalNum + len;
-					Log.e(TAG,"values1长度"+Integer.toString( values1.size() )+
-							"|nTotalNum值 "+Integer.toString( nTotalNum ));
+//					Log.e(TAG,"values1长度"+Integer.toString( values1.size() )+
+//							"|nTotalNum值 "+Integer.toString( nTotalNum ));
 					setChartData();
 					lineChart.invalidate();
 
@@ -743,6 +760,13 @@ public class BluetoothPlot extends Activity {
 		matrixCHData = DenseMatrix.Factory.emptyMatrix();
 		bRecognize = true;
 		bFreeseDisp = false;
+		String string = "V1(mv):"+  "\n" +
+				"V2(mv):"+  "\n" +
+				"V3(mv):"+ "\n" +
+				"V1/V3: ";
+		lineChart.getDescription().setTextColor(Color.rgb(255,255,255));
+		lineChart.getDescription().setText(string);
+
 	}
 	// 得出识别结果。
 	private void 	recoData(){
@@ -753,17 +777,22 @@ public class BluetoothPlot extends Activity {
 		double[] PeakValues;
 		double[] CharacterValues = new double[ 4 ];
 
-//		DenseMatrix.Factory.linkToArray( CHData );
 		CHData = matrixCHData.toDoubleArray();
 		FilterData = DSP.FIRFilter(CHData);
 		PeakValues = DSP.PeakValue( FilterData, 100 );// 以各信号的四个特征值为行，组成特征值矩阵。
 		for(int j = 0; j < 3; j++)
 			CharacterValues[j] = PeakValues[j];
 		CharacterValues[3] = DSP.V1toV3( PeakValues );
+        String string = "V1(mv):"+ new Float(CharacterValues[0]).intValue() + "\n" +
+                "V2(mv):"+ new Float(CharacterValues[1]).intValue() + "\n" +
+                "V3(mv):"+ new Float(CharacterValues[2]).intValue() + "\n" +
+                "V1/V3: "+ new Float(CharacterValues[0]/CharacterValues[2]).intValue();
 
 		CharacterValues = DSP.mapMaxMin( CharacterValues );
 
-		reco_res.setText( "类型："+CATAGOTIES[DSP.BPNN( CharacterValues )] );
+		reco_res.setText( "类型："+CATAGORIES[DSP.BPNN( CharacterValues )] );
+		lineChart.getDescription().setText(string);
+		lineChart.getDescription().setTextColor(Color.rgb(255,255,255));
 
 		bRecognize = false;
 		bFreeseDisp = true;

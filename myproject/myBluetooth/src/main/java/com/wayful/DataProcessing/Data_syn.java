@@ -97,7 +97,7 @@ public class Data_syn {
      * @return
      * 分两步实现：1、把16进制的bytes转换为float类型，每组8个数；2、取出其中第2、3、4 即为3个通道值。
      */
-    public static float[][] bytesToFloat(byte[] bytes, int a) {
+    public static float[][] bytesToFloat(byte[] bytes, int a, int BYTES_PER_ROW) {
         // 1、把16进制的bytes转换为float类型，每组8个数
         int len = a/4;     // 接收的float 数据个数。
         float []data = new float[len];
@@ -111,12 +111,13 @@ public class Data_syn {
             buf.rewind();
             data[i] = buf.getFloat();
         }
-        // 2、取出其中第2、3、4 即为3个通道值。
-        int len1 = len/8;    // 32个字节，目前测试：回传数据均为32的整数倍。
+        // 2、取出其中第2、3、4 即为3个通道值。从文件读取数据时，为1、2、3通道。
+        int len1 = a/BYTES_PER_ROW;    // 目前测试：回传数据均为32的整数倍。
+        int BEGIN = (BYTES_PER_ROW -24)/8;   // 32个字节时，第2、3、4数据即为3个通道值。24字节时为1、2、3 数据。
         float [][]result = new float[3][len1];
         for (int i = 0; i < 3; i++) {
             for(int j = 0; j < len1; j++)
-                result[i][j] = data[1 + 8*j + i];
+                result[i][j] = data[BEGIN + BYTES_PER_ROW/4*j + i];
         }
         return result;
     }

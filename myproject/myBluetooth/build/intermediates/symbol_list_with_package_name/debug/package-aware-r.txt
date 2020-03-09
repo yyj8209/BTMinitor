@@ -752,6 +752,7 @@ id collapseActionView
 id contentPanel
 id custom
 id customPanel
+id data_source
 id decor_content_parent
 id default_activity_button
 id dimensions
@@ -958,6 +959,7 @@ string auto_huan
 string auto_send
 string autosend
 string bt_not_enabled_leaving
+string bt_source
 string button_scan
 string chat_activity_name
 string check
@@ -974,6 +976,8 @@ string de_poet
 string de_send
 string de_state
 string discoverable1
+string ds_file
+string ds_mechine
 string edtauto
 string edtsend
 string er_check_platform
